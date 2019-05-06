@@ -1,5 +1,5 @@
 // MIT license - license_nvjob.txt
-// Unity FPS Counter
+// Unity FPS Counter - https://github.com/nvjob/Unity-FPS-Counter
 // #NVJOB Nicholas Veselov (independent developer) - https://nvjob.pro, http://nvjob.dx.am
 // The script is written according to the calculation of the average value in mathematics.
 
