@@ -16,7 +16,7 @@ public class Example : MonoBehaviour
 using UnityEngine;
     void Update()
     {
-       int fps = StFPS.Counter(60, Time.deltaTime);
+       print(StFPS.Counter(60, Time.deltaTime));       
     }
 }
 ```
