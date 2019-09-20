@@ -5,11 +5,10 @@ Version 1.2
 FPS counter with graph.<br>
 The FPS counter has a buffer in which it stores values, then the mean arithmetic value is calculated from these values.
 
-The graph is drawn after a given time (graphUpdate variable), and not once per frame.<br>
-Coroutine responsible for drawing the graph is run once in void Awake ().<br>
-The "chart lines" are stored in a static pool and are subsequently taken from there and returned there.
-
-You can use FPS counter as a class by calling it from anywhere else:
+- The graph is drawn after a given time (graphUpdate variable), and not once per frame.<br>
+- Coroutine responsible for drawing the graph is run once in void Awake ().<br>
+- The "chart lines" are stored in a static pool and are subsequently taken from there and returned there.<br>
+- You can use FPS counter as a class by calling it from anywhere else:
 ```
 public class Example : MonoBehaviour
 {
