@@ -11,6 +11,8 @@ The "chart lines" are stored in a static pool and are subsequently taken from th
 
 You can use FPS counter as a class by calling it from anywhere else:
 ```
+public class Example : MonoBehaviour
+{
 using UnityEngine;
     void Update()
     {
