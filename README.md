@@ -2,7 +2,7 @@
 
 Version 1.2
 
-FPS counter with a graph.<br>
+FPS counter with graph.<br>
 The FPS counter has a buffer in which it stores values, then the mean arithmetic value is calculated from these values.
 
 https://www.youtube.com/watch?v=fnTN8IWTiNs
