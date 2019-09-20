@@ -29,15 +29,35 @@ public class FPSCounter : MonoBehaviour
     //---------------------------------
 
     float ofsetX;
-    int curCount, lineCount;
+    int curCount, lineCount; 
+
+    //---------------------------------
+
+    static Transform stTr;
+    static GameObject[] stLines;
+    static int stNumLines;
     
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
 
-    void Start()
+    void Awake()
     {
         //---------------------------------
+
+        stTr = graph;
+        stNumLines = 100;
+        stLines = new GameObject[stNumLines];
+
+        for (int i = 0; i < stNumLines; i++)
+        {
+            stLines[i] = new GameObject();
+            stLines[i].SetActive(false);
+            stLines[i].name = "Line_" + i;
+            stLines[i].transform.parent = stTr;
+            Image img = stLines[i].AddComponent<Image>();
+            img.color = graphColor;
+        }
 
         StartCoroutine(DrawGraph());
 
@@ -70,18 +90,16 @@ public class FPSCounter : MonoBehaviour
         {
             yield return new WaitForSeconds(graphUpdate);
 
-            GameObject NewObj = new GameObject();
-            NewObj.transform.SetParent(graph);
-            Image NewImage = NewObj.AddComponent<Image>();
-
-            NewImage.rectTransform.anchorMin = new Vector2(ofsetX, 0);
-            NewImage.rectTransform.anchorMax = new Vector2(ofsetX + 0.01f, 1.0f / highestPossibleFPS * curCount);
-            NewImage.rectTransform.offsetMax = NewImage.rectTransform.offsetMin = new Vector2(0, 0);
-            NewImage.color = graphColor;
+            GameObject obj = GiveLine();
+            Image img = obj.GetComponent<Image>();
+            img.rectTransform.anchorMin = new Vector2(ofsetX, 0);
+            img.rectTransform.anchorMax = new Vector2(ofsetX + 0.01f, 1.0f / highestPossibleFPS * curCount);
+            img.rectTransform.offsetMax = img.rectTransform.offsetMin = new Vector2(0, 0);
+            obj.SetActive(true);
 
             if (lineCount++ > 49)
             {
-                foreach (Transform child in graph) Destroy(child.gameObject);
+                foreach (Transform child in graph) child.gameObject.SetActive(false);
                 ofsetX = lineCount = 0;
             }
             else ofsetX += 0.02f;
@@ -89,7 +107,21 @@ public class FPSCounter : MonoBehaviour
 
         //---------------------------------
     }
-    
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    static GameObject GiveLine()
+    {
+        //---------------------------------
+
+        for (int i = 0; i < stNumLines; i++) if (!stLines[i].activeSelf) return stLines[i];
+        return null;
+
+        //---------------------------------
+    }
+
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 }

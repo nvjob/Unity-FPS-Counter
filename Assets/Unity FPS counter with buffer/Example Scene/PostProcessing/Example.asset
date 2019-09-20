@@ -57,9 +57,9 @@ MonoBehaviour:
         blendType: 0
         reflectionQuality: 2
         maxDistance: 100
-        iterationCount: 256
+        iterationCount: 512
         stepSize: 3
-        widthModifier: 0.5
+        widthModifier: 1
         reflectionBlur: 1
         reflectBackfaces: 0
       intensity:
