@@ -5,6 +5,19 @@ Version 1.2
 FPS counter with graph.<br>
 The FPS counter has a buffer in which it stores values, then the mean arithmetic value is calculated from these values.
 
+The graph is drawn after a given time (graphUpdate variable), and not once per frame.<br>
+Coroutine responsible for drawing the graph is run once in void Awake ().<br>
+The "chart lines" are stored in a static pool and are subsequently taken from there and returned there.<br>
+You can use FPS counter as a class by calling it from anywhere else.<br>
+```
+using UnityEngine;
+    void Update()
+    {
+       int fps = StFPS.Counter(60, Time.deltaTime);
+    }
+}
+```
+
 https://www.youtube.com/watch?v=fnTN8IWTiNs
 
 ![GitHub Logo](https://github.com/nvjob/Unity-FPS-Counter/blob/master/Images/Unity-FPS-Counter-1.png?raw=true)
