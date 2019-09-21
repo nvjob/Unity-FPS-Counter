@@ -1,4 +1,4 @@
-# #NVJOB FPS counter and graph (for Unity)
+# #NVJOB FPS counter and graph - simple and fast (for Unity)
 
 Version 1.2
 
