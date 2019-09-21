@@ -1,4 +1,4 @@
-# Unity FPS counter with buffer
+# #NVJOB FPS counter and graph (for Unity)
 
 Version 1.2
 
