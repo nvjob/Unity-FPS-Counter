@@ -20,6 +20,10 @@ using UnityEngine;
 }
 ```
 
+### Prerequisites
+
+To work on the project, you will need a Unity version of at least 2019.1.8 (64-bit).
+
 https://www.youtube.com/watch?v=suy4ND4_hn4
 
 https://www.youtube.com/watch?v=fnTN8IWTiNs
