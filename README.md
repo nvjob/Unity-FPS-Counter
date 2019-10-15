@@ -26,12 +26,10 @@ To work on the project, you will need a Unity version of at least 2019.1.8 (64-b
 
 ------------------------------------
 
-https://www.youtube.com/watch?v=suy4ND4_hn4
-
+https://www.youtube.com/watch?v=suy4ND4_hn4 <br/>
 https://www.youtube.com/watch?v=fnTN8IWTiNs
 
 ![GitHub Logo](https://github.com/nvjob/Unity-FPS-Counter/blob/master/Images/Unity-FPS-Counter-1.png?raw=true)
-
 ![GitHub Logo](https://github.com/nvjob/Unity-FPS-Counter/blob/master/Images/Unity-FPS-Counter-0.png?raw=true)
 
 -------------------------------------------------------------------
