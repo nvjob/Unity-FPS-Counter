@@ -5,7 +5,7 @@ Version 1.2
 FPS counter with graph.<br>
 The FPS counter has a buffer in which it stores values, then the mean arithmetic value is calculated from these values.
 
-![GitHub Logo](https://github.com/nvjob/Unity-FPS-Counter/blob/master/Images/Unity-FPS-Counter-1.png?raw=true)
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/fps%20counter%20and%20graph/12/pic/Unity-FPS-Counter-1.jpg)
 https://www.youtube.com/watch?v=suy4ND4_hn4 <br/>
 https://www.youtube.com/watch?v=fnTN8IWTiNs
 
@@ -24,7 +24,7 @@ using UnityEngine;
 }
 ```
 
-![GitHub Logo](https://github.com/nvjob/Unity-FPS-Counter/blob/master/Images/Unity-FPS-Counter-0.png?raw=true)
+![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/fps%20counter%20and%20graph/12/pic/Unity-FPS-Counter-0.jpg)
 
 ### Prerequisites
 
