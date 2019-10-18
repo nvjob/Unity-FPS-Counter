@@ -36,7 +36,7 @@ To work on the project, you will need a Unity version of at least 2019.1.8 (64-b
 Designed by #NVJOB Nicholas Veselov - https://nvjob.github.io
 
 ### License
-MIT License - https://github.com/nvjob/Unity-FPS-Counter/blob/master/LICENSE
+MIT License - https://nvjob.github.io/mit-license
 
 ### Donate
 Help for this project - https://nvjob.github.io/donate
