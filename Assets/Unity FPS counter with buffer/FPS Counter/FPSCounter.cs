@@ -36,6 +36,8 @@ public class FPSCounter : MonoBehaviour
     static Transform stTr;
     static GameObject[] stLines;
     static int stNumLines;
+    static string[] displayBuffer;
+    static WaitForSeconds graphWait;
     
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -59,6 +61,13 @@ public class FPSCounter : MonoBehaviour
             img.color = graphColor;
         }
 
+        graphWait = new WaitForSeconds(graphUpdate);
+        displayBuffer = new string[highestPossibleFPS + 1];
+        for (int i = 0; i <= highestPossibleFPS; i++)
+        {
+            displayBuffer[i] = "FPS: " + i.ToString();
+        }
+
         StartCoroutine(DrawGraph());
 
         //---------------------------------
@@ -73,7 +82,7 @@ public class FPSCounter : MonoBehaviour
         //---------------------------------
 
         curCount = StFPS.Counter(frameUpdate, Time.deltaTime);
-        counterText.text = "FPS: " + curCount.ToString();
+        counterText.text = displayBuffer[curCount];
 
         //---------------------------------
     }
@@ -88,7 +97,7 @@ public class FPSCounter : MonoBehaviour
 
         while (true)
         {
-            yield return new WaitForSeconds(graphUpdate);
+            yield return graphWait;
 
             GameObject obj = GiveLine();
             Image img = obj.GetComponent<Image>();
