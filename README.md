@@ -3,7 +3,7 @@
 
 ![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/fps%20counter%20and%20graph/12/pic/Unity-FPS-Counter-1.jpg)
 
-FPS counter with graph.<br>
+FPS counter with graph for Unity.<br>
 The FPS counter has a buffer in which it stores values, then the mean arithmetic value is calculated from these values.
 
 -------------------------------------------------------------------
