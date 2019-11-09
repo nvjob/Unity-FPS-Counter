@@ -27,7 +27,7 @@ using UnityEngine;
 }
 ```
 
-**Video manual:** [youtube.com/watch?v=suy4ND4_hn4](https://www.youtube.com/watch?v=suy4ND4_hn4), [youtube.com/watch?v=fnTN8IWTiNs](https://www.youtube.com/watch?v=fnTN8IWTiNs)
+**Video manual:** [youtube.com/watch?v=suy4ND4_hn4](https://www.youtube.com/watch?v=suy4ND4_hn4); [youtube.com/watch?v=fnTN8IWTiNs](https://www.youtube.com/watch?v=fnTN8IWTiNs)
 
 -------------------------------------------------------------------
 
