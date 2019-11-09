@@ -28,8 +28,8 @@ using UnityEngine;
 ```
 
 #### Video manual:
-https://www.youtube.com/watch?v=suy4ND4_hn4 <br/>
-https://www.youtube.com/watch?v=fnTN8IWTiNs
+[youtube.com/watch?v=suy4ND4_hn4](https://www.youtube.com/watch?v=suy4ND4_hn4) <br/>
+[youtube.com/watch?v=fnTN8IWTiNs](https://www.youtube.com/watch?v=fnTN8IWTiNs)
 
 -------------------------------------------------------------------
 
