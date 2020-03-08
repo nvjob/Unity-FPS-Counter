@@ -1,10 +1,11 @@
-# #NVJOB FPS Counter and Graph - simple and fast 1.2
-#### [nvjob.github.io/unity/nvjob-fps-counter-and-graph](https://nvjob.github.io/unity/nvjob-fps-counter-and-graph)
+# #NVJOB FPS Counter and Graph 2.0
+#### Full instructions - [nvjob.github.io/unity/nvjob-fps-counter-and-graph](https://nvjob.github.io/unity/nvjob-fps-counter-and-graph)
 
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/fps%20counter%20and%20graph/12/pic/Unity-FPS-Counter-1.jpg)
+![GitHub Logo](https://nvjob.github.io/repo/unity%20assets/fps%20counter%20and%20graph/pic/4.jpg)
 
-FPS counter with graph for Unity.<br>
-The FPS counter has a buffer in which it stores values, then the mean arithmetic value is calculated from these values.
+#NVJOB FPS Counter and Graph is a frame counter that saves the time of each frame for a specified period of time and calculates the average fps, minimum and maximum fps from the obtained values.
+
+This counter also displays a graph of the average value, and can record the values ​​of the minimum, average and maximum FPS in a csv file, for further analysis.
 
 -------------------------------------------------------------------
 
@@ -12,28 +13,16 @@ The FPS counter has a buffer in which it stores values, then the mean arithmetic
 To work on the project, you will need a Unity version of at least 2019.1.8 (64-bit).
 
 ### Information
-- The graph is drawn after a given time (graphUpdate variable), and not once per frame.<br>
-- Coroutine responsible for drawing the graph is run once in void Awake ().<br>
-- Graph lines are stored in a static pool and are subsequently taken from there and returned there.<br>
-- You can use FPS counter as a class by calling it from anywhere else:
-```
-public class Example : MonoBehaviour
-{
-using UnityEngine;
-    void Update()
-    {
-       print(StFPS.Counter(60, Time.deltaTime));       
-    }
-}
-```
+There is an example in this asset to understand the operation and settings.
 
-#### Video manual:
-[youtube.com/watch?v=suy4ND4_hn4](https://www.youtube.com/watch?v=suy4ND4_hn4)<br>
-[youtube.com/watch?v=fnTN8IWTiNs](https://www.youtube.com/watch?v=fnTN8IWTiNs)
+<strong>Features:</strong><br>
+- Counter minimum, average and maximum FPS.<br>
+- Graph of the average value of FPS.<br>
+- Log file (csv) for minimum, average and maximum FPS.<br>
+- You can use FPS counter as a class by calling it from anywhere else.<br>
+- One script.<br>
+- Good performance.
 
--------------------------------------------------------------------
-
-![GitHub Logo](https://raw.githubusercontent.com/nvjob/nvjob.github.io/master/repo/unity%20assets/fps%20counter%20and%20graph/12/pic/Unity-FPS-Counter-0.jpg)
 
 -------------------------------------------------------------------
 
