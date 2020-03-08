@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/#NVJOB FPS Counter and Graph/Example Scenes/Scenes/4DCubes.unity
+    guid: cda5ced4daf34034390b5c1da7bd4046
   m_configObjects: {}
