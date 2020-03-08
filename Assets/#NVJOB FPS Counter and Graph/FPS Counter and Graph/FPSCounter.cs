@@ -98,9 +98,9 @@ public class FPSCounter : MonoBehaviour
     {
         //--------------
 
-        // StFPS.Counter().x - min fps
-        // StFPS.Counter().y - avg fps
-        // StFPS.Counter().z - max fps
+        // StFPS.Counter(Time Update).x - min fps
+        // StFPS.Counter(Time Update).y - avg fps
+        // StFPS.Counter(Time Update).z - max fps
 
         allFps = StFPS.Counter(timeUpdate);
         counterText.text = "MIN " + allFps.x.ToString() + " | AVG " + allFps.y.ToString() + " | MAX " + allFps.z.ToString();
@@ -128,11 +128,12 @@ public class FPSCounter : MonoBehaviour
         {
             GameObject obj = GiveLine();
             Image img = obj.GetComponent<Image>();
-            img.rectTransform.anchorMin = new Vector2(ofsetX, 0);
+            RectTransform imgRT = img.rectTransform;
+            imgRT.anchorMin = new Vector2(ofsetX, 0);
             float anchorMaxY = 1.0f / highestPossibleFPS * allFps.y;
             if (anchorMaxY > 1) anchorMaxY = 1;
-            img.rectTransform.anchorMax = new Vector2(ofsetX + 0.01f, anchorMaxY);
-            img.rectTransform.offsetMax = img.rectTransform.offsetMin = new Vector2(0, 0);
+            imgRT.anchorMax = new Vector2(ofsetX + 0.01f, anchorMaxY);
+            imgRT.offsetMax = imgRT.offsetMin = Vector2.zero;
             obj.SetActive(true);
 
             if (lineCount++ > 49) // The number of lines in the chart.
@@ -164,7 +165,7 @@ public class FPSCounter : MonoBehaviour
         transform.Find("Counter/HalfFPSText").gameObject.GetComponent<Text>().text = Mathf.Round(highestPossibleFPS * 0.5f).ToString();
 
         graphTr = transform.Find("Graph");
-        graph = graphTr.gameObject;        
+        graph = graphTr.gameObject;
 
         stNumLines = 100; // The number of lines in the chart. If there are not enough lines, increase this value.
         stLines = new GameObject[stNumLines];
@@ -176,7 +177,9 @@ public class FPSCounter : MonoBehaviour
             stLines[i].name = "Line_" + i;
             stLines[i].transform.parent = graphTr;
             Image img = stLines[i].AddComponent<Image>();
-            img.rectTransform.localScale = Vector3.one;
+            RectTransform imgRT = img.rectTransform;
+            imgRT.localScale = Vector3.one;
+            imgRT.localPosition = Vector3.zero;
             img.color = graphColor;
         }
 
@@ -244,7 +247,7 @@ public static class StFPS
             else logWrite.Add(Vector3Int.zero);
         }
 
-        if (Time.timeScale == 1 && fps.y > 0 ) return fps;
+        if (Time.timeScale == 1 && fps.y > 0) return fps;
         else return Vector3Int.zero;
 
         //--------------
