@@ -58,6 +58,7 @@ public class FPSCounter : MonoBehaviour
     {
         //--------------
 
+        Application.targetFrameRate = highestPossibleFPS;
         CreateCounter();
 
         //--------------
