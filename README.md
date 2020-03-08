@@ -15,7 +15,7 @@ To work on the project, you will need a Unity version of at least 2019.1.8 (64-b
 ### Information
 There is an example in this asset to understand the operation and settings.
 
-<strong>Features:</strong><br>
+<strong>Features:</strong>
 - Counter minimum, average and maximum FPS.<br>
 - Graph of the average value of FPS.<br>
 - Log file (csv) for minimum, average and maximum FPS.<br>
