@@ -1,10 +1,13 @@
-FPS counter has a buffer in which it stores values, then the mean arithmetic value is calculated from these values.
+#NVJOB FPS Counter and Graph is a frame counter that saves the time of each frame for a specified period of time and calculates the average fps, minimum and maximum fps from the obtained values.
+This counter also displays a graph of the average value, and can record the values ​​of the minimum, average and maximum FPS in a csv file, for further analysis.
 
 Features:
-- The graph is drawn after a given time (graphUpdate variable), and not once per frame.
-- Coroutine responsible for drawing the graph is run once in void Awake ().
-- Graph lines are stored in a static pool and are subsequently taken from there and returned there.
+- Counter minimum, average and maximum FPS.
+- Graph of the average value of FPS.
+- Log file (csv) for minimum, average and maximum FPS.
 - You can use FPS counter as a class by calling it from anywhere else.
+- One script.
+- Good performance.
 
 Full instructions - https://nvjob.github.io/unity/nvjob-fps-counter-and-graph
 
