@@ -1,7 +1,7 @@
 # #NVJOB FPS Counter and Graph 2.0
 #### Full instructions - [nvjob.github.io/unity/nvjob-fps-counter-and-graph](https://nvjob.github.io/unity/nvjob-fps-counter-and-graph)
 
-![GitHub Logo](https://nvjob.github.io/repo/unity%20assets/fps%20counter%20and%20graph/pic/4.jpg)
+![GitHub Logo](https://nvjob.github.io/repo/unity%20assets/fps%20counter%20and%20graph/pic/5.jpg)
 
 #NVJOB FPS Counter and Graph is a frame counter that saves the time of each frame for a specified period of time and calculates the average fps, minimum and maximum fps from the obtained values.
 
