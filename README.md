@@ -23,6 +23,10 @@ There is an example in this asset to understand the operation and settings.
 - One script.<br>
 - Good performance.
 
+-------------------------------------------------------------------
+
+**Patrons:** [nvjob.github.io/patrons](https://nvjob.github.io/patrons)<br>
+*You can become one of the patrons, or make a sponsorship donation.*
 
 -------------------------------------------------------------------
 
