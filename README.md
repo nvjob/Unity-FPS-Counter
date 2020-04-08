@@ -30,8 +30,8 @@ There is an example in this asset to understand the operation and settings.
 
 -------------------------------------------------------------------
 
-**Authors:** #NVJOB Nicholas Veselov - [nvjob.github.io](https://nvjob.github.io)
+**Authors:** [#NVJOB. Developer Nicholas Veselov. Разработчик Николай Веселов. Санкт-Петербург.](https://nvjob.github.io)
 
-**License:** MIT License. Clarification of licenses - [nvjob.github.io/mit-license](https://nvjob.github.io/mit-license)
+**License:** MIT License. [Clarification of licenses](https://nvjob.github.io/mit-license).
 
-**Support:** [nvjob.github.io/support](https://nvjob.github.io/support)
+**Support:** [Report a Problem](https://nvjob.github.io/reportaproblem/).
